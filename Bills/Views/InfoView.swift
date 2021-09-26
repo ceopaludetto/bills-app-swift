@@ -10,7 +10,7 @@ import SwiftUI
 struct InfoView: View {
     var body: some View {
       List {
-        Link("Twitter", destination: URL(string: "https://twitter.com/ceopaludetto")!)
+        Link("Twitter", destination: URL(string: "https://twitter.com/soreduard")!)
         Link(
           destination: URL(string: "https://github.com/ceopaludetto")!,
           label: {
