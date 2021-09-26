@@ -1,0 +1,26 @@
+query GetBills($after: String) {
+  getBillsPerMonth(first: 10, after: $after) {
+    pageInfo {
+      endCursor
+    }
+    edges {
+      cursor
+      node {
+        id
+        name
+        value
+        type
+        createdAt
+      }
+    }
+  }
+}
+
+mutation SaveBill($input: BillInsertInput!) {
+  saveBill(input: $input) {
+    id
+    name
+    value
+    type
+  }
+}

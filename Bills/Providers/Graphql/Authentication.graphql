@@ -1,0 +1,8 @@
+mutation Login($input: AuthenticationLoginInput!) {
+  login(input: $input) {
+    id
+    firstName
+    lastName
+    email
+  }
+}
