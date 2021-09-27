@@ -22,9 +22,8 @@ struct GeneralView: View {
       Section {
         Button(
           action: {
-            authenticationController.updateValidation(value: false)
+            TokenManager.access.clear()
             Network.shared.apollo.clearCache()
-            TokenManager.shared.clear()
           },
           label: {
             Text("Finalizar Sessão").frame(maxWidth: .infinity, alignment: .center)

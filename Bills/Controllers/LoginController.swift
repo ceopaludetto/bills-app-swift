@@ -15,22 +15,20 @@ class LoginController: ObservableObject {
     input.email.isEmpty || input.password.isEmpty
   }
 
-  func handleLogin(completion: @escaping (Bool) -> Void) {
+  func handleLogin() {
     Network.shared.apollo.perform(mutation: LoginMutation(input: input)) { context in
       switch context {
       case let .success(res):
         if res.data?.login != nil {
-          completion(true)
+          print("Success")
         }
 
         if let error = res.errors {
           print("Error from Server: \(error)")
-          completion(false)
         }
 
       case let .failure(error):
         print("Error: \(error)")
-        completion(false)
       }
     }
   }

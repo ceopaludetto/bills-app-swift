@@ -21,10 +21,7 @@ struct LoginView: View {
       .toolbar {
         ToolbarItemGroup(placement: .navigationBarTrailing) {
           Button("Entrar") {
-            loginController.handleLogin { res in
-              print(res)
-              authenticationController.updateValidation(value: res)
-            }
+            loginController.handleLogin()
           }.disabled(loginController.isDisabled)
         }
       }

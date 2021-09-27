@@ -8,25 +8,42 @@
 import Foundation
 import KeychainSwift
 
-class TokenManager {
-  private static var key = "token"
-  static let shared = TokenManager()
+@objc protocol AuthChangeListener: AnyObject {
+  func authStateDidChange(isLogged: Bool)
+}
 
-  private var keychain = KeychainSwift()
+class TokenManager {
+  static let access = TokenManager(key: "token")
+  static let refresh = TokenManager(key: "refreshtoken")
+
+  private var listeners: [(_ value: Bool) -> Void] = []
+  private var keychain: KeychainSwift
+  private var key: String
+
+  init(key: String) {
+    self.key = key
+    keychain = KeychainSwift()
+  }
+
+  func addListener(listener: @escaping (_ value: Bool) -> Void) {
+    listeners.append(listener)
+  }
 
   func set(token: String) {
-    keychain.set(token, forKey: TokenManager.key)
+    keychain.set(token, forKey: key)
+    listeners.forEach { $0(!token.isEmpty) }
   }
 
   func exists() -> Bool {
-    return keychain.get(TokenManager.key) != nil
+    return keychain.get(key) != nil
   }
 
   func get() -> String? {
-    return keychain.get(TokenManager.key)
+    return keychain.get(key)
   }
 
-  func clear() -> Bool {
-    return keychain.delete(TokenManager.key)
+  func clear() {
+    keychain.delete(key)
+    listeners.forEach { $0(false) }
   }
 }

@@ -12,10 +12,13 @@ class AuthenticationController: ObservableObject {
   @Published var isLoggedIn = false
 
   init() {
-    isLoggedIn = TokenManager.shared.exists()
+    isLoggedIn = TokenManager.access.exists()
+    TokenManager.access.addListener { value in
+      self.updateValidation(value: value)
+    }
   }
 
-  func updateValidation(value: Bool) {
+  private func updateValidation(value: Bool) {
     withAnimation {
       isLoggedIn = value
     }

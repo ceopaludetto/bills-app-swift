@@ -9,15 +9,13 @@ import Apollo
 import Foundation
 
 class AuthenticationSendInterceptor: ApolloInterceptor {
-  private func addToken<Operation: GraphQLOperation>(token: String, chain: RequestChain, request: HTTPRequest<Operation>, response: HTTPResponse<Operation>?, completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void) {
-    request.addHeader(name: "Authorization", value: "Bearer \(token)")
-    chain.proceedAsync(request: request, response: response, completion: completion)
-  }
-
   func interceptAsync<Operation: GraphQLOperation>(chain: RequestChain, request: HTTPRequest<Operation>, response: HTTPResponse<Operation>?, completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void) {
-    if TokenManager.shared.exists() {
-      addToken(token: TokenManager.shared.get()!, chain: chain, request: request, response: response, completion: completion)
-      return
+    if TokenManager.access.exists() {
+      request.addHeader(name: "Authorization", value: "Bearer \(TokenManager.access.get()!)")
+    }
+
+    if TokenManager.refresh.exists() {
+      request.addHeader(name: "RefreshToken", value: "Bearer \(TokenManager.refresh.get()!)")
     }
 
     chain.proceedAsync(request: request, response: response, completion: completion)
@@ -40,10 +38,20 @@ class AuthenticationSaveInterceptor: ApolloInterceptor {
       return
     }
 
+    if res.parsedResponse?.errors?[0].message == "Unauthorized" {
+      TokenManager.refresh.clear()
+      TokenManager.access.clear()
+    }
+
     let token = res.httpResponse.value(forHTTPHeaderField: "Authorization")
+    let refreshToken = res.httpResponse.value(forHTTPHeaderField: "RefreshToken")
 
     if token != nil {
-      TokenManager.shared.set(token: token!)
+      TokenManager.access.set(token: token!)
+    }
+
+    if refreshToken != nil {
+      TokenManager.refresh.set(token: refreshToken!)
     }
   }
 }
