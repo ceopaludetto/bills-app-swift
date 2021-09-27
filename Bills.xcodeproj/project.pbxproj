@@ -282,6 +282,7 @@
 			buildPhases = (
 				8B77BC5EFA8A0398C73F893D /* [CP] Check Pods Manifest.lock */,
 				07A176F926FED3BA00DDBC2A /* Generate Apollo GraphQL API */,
+				0754C23F270226B300325720 /* Format */,
 				0728898626FE7F27009B7848 /* Sources */,
 				0728898726FE7F27009B7848 /* Frameworks */,
 				0728898826FE7F27009B7848 /* Resources */,
@@ -408,6 +409,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0754C23F270226B300325720 /* Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Format;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\"\n";
+			showEnvVarsInLog = 0;
+		};
 		07A176F926FED3BA00DDBC2A /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,6 +447,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --endpoint=\"http://localhost:3000/graphql\" API.swift\n";
+			showEnvVarsInLog = 0;
 		};
 		16AA49796859705F6320B4DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BillView: View {
   var item: GetBillsQuery.Data.GetBillsPerMonth.Edge?
-  
+
   var body: some View {
     List {
       HStack {

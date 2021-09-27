@@ -10,13 +10,13 @@ import Foundation
 class CurrencyUtil {
   static let current = CurrencyUtil()
   private let formatter: NumberFormatter
-  
-  init () {
-    self.formatter = NumberFormatter()
-    self.formatter.locale = Locale.current
-    self.formatter.numberStyle = .currency
+
+  init() {
+    formatter = NumberFormatter()
+    formatter.locale = Locale.current
+    formatter.numberStyle = .currency
   }
-  
+
   func format(value: Int) -> String {
     let price = formatter.string(from: NSNumber(value: value / 100))!
     let sign = value >= 0 ? "+" : "-"

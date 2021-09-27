@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
   @StateObject private var authenticationController = AuthenticationController()
-  
+
   var body: some View {
     if !authenticationController.isLoggedIn {
       LoginView().accentColor(.purple).environmentObject(authenticationController)

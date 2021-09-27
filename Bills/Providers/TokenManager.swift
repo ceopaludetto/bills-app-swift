@@ -9,24 +9,24 @@ import Foundation
 import KeychainSwift
 
 class TokenManager {
-  static private var key = "token"
+  private static var key = "token"
   static let shared = TokenManager()
-  
+
   private var keychain = KeychainSwift()
-  
-  func set(token: String) -> Void {
-    self.keychain.set(token, forKey: TokenManager.key)
+
+  func set(token: String) {
+    keychain.set(token, forKey: TokenManager.key)
   }
-  
+
   func exists() -> Bool {
-    return self.keychain.get(TokenManager.key) != nil
+    return keychain.get(TokenManager.key) != nil
   }
-  
+
   func get() -> String? {
-    return self.keychain.get(TokenManager.key)
+    return keychain.get(TokenManager.key)
   }
-  
+
   func clear() -> Bool {
-    return self.keychain.delete(TokenManager.key)
+    return keychain.delete(TokenManager.key)
   }
 }

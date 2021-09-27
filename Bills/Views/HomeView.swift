@@ -11,7 +11,7 @@ struct HomeView: View {
   @State var showSheet = false
   @State var search = ""
   @StateObject var billController = BillController()
-  
+
   var body: some View {
     NavigationView {
       List(billController.data?.edges ?? [], id: \.node.id) { item in

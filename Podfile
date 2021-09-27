@@ -8,6 +8,7 @@ target 'Bills' do
   # Pods for Bills
   pod "Apollo"
   pod "KeychainSwift"
+  pod "SwiftFormat/CLI"
 
   target 'BillsTests' do
     inherit! :search_paths

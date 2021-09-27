@@ -10,11 +10,11 @@ import SwiftUI
 
 class AuthenticationController: ObservableObject {
   @Published var isLoggedIn = false
-  
+
   init() {
     isLoggedIn = TokenManager.shared.exists()
   }
-  
+
   func updateValidation(value: Bool) {
     withAnimation {
       isLoggedIn = value

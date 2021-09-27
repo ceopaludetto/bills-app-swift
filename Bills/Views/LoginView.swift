@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginView: View {
   @EnvironmentObject private var authenticationController: AuthenticationController
   @StateObject private var loginController = LoginController()
-  
+
   var body: some View {
     NavigationView {
       Form {

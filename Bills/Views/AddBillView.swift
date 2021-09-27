@@ -9,10 +9,10 @@ import SwiftUI
 
 struct AddBillView: View {
   @Environment(\.presentationMode) var presentation
-  
+
   @State var name = ""
   @State var date = Date()
-  
+
   var body: some View {
     NavigationView {
       Form {

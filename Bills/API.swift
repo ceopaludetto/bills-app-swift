@@ -46,38 +46,38 @@ public enum BillType: RawRepresentable, Equatable, Hashable, CaseIterable, Apoll
 
   public init?(rawValue: RawValue) {
     switch rawValue {
-      case "BANK_INVOICE": self = .bankInvoice
-      case "BANK_SLIP": self = .bankSlip
-      case "INVESTMENT": self = .investment
-      case "SALARY": self = .salary
-      case "TAX": self = .tax
-      case "TRANSFER": self = .transfer
-      default: self = .__unknown(rawValue)
+    case "BANK_INVOICE": self = .bankInvoice
+    case "BANK_SLIP": self = .bankSlip
+    case "INVESTMENT": self = .investment
+    case "SALARY": self = .salary
+    case "TAX": self = .tax
+    case "TRANSFER": self = .transfer
+    default: self = .__unknown(rawValue)
     }
   }
 
   public var rawValue: RawValue {
     switch self {
-      case .bankInvoice: return "BANK_INVOICE"
-      case .bankSlip: return "BANK_SLIP"
-      case .investment: return "INVESTMENT"
-      case .salary: return "SALARY"
-      case .tax: return "TAX"
-      case .transfer: return "TRANSFER"
-      case .__unknown(let value): return value
+    case .bankInvoice: return "BANK_INVOICE"
+    case .bankSlip: return "BANK_SLIP"
+    case .investment: return "INVESTMENT"
+    case .salary: return "SALARY"
+    case .tax: return "TAX"
+    case .transfer: return "TRANSFER"
+    case let .__unknown(value): return value
     }
   }
 
   public static func == (lhs: BillType, rhs: BillType) -> Bool {
     switch (lhs, rhs) {
-      case (.bankInvoice, .bankInvoice): return true
-      case (.bankSlip, .bankSlip): return true
-      case (.investment, .investment): return true
-      case (.salary, .salary): return true
-      case (.tax, .tax): return true
-      case (.transfer, .transfer): return true
-      case (.__unknown(let lhsValue), .__unknown(let rhsValue)): return lhsValue == rhsValue
-      default: return false
+    case (.bankInvoice, .bankInvoice): return true
+    case (.bankSlip, .bankSlip): return true
+    case (.investment, .investment): return true
+    case (.salary, .salary): return true
+    case (.tax, .tax): return true
+    case (.transfer, .transfer): return true
+    case let (.__unknown(lhsValue), .__unknown(rhsValue)): return lhsValue == rhsValue
+    default: return false
     }
   }
 
@@ -171,7 +171,7 @@ public final class LoginMutation: GraphQLMutation {
     public private(set) var resultMap: ResultMap
 
     public init(unsafeResultMap: ResultMap) {
-      self.resultMap = unsafeResultMap
+      resultMap = unsafeResultMap
     }
 
     public init(login: Login) {
@@ -203,7 +203,7 @@ public final class LoginMutation: GraphQLMutation {
       public private(set) var resultMap: ResultMap
 
       public init(unsafeResultMap: ResultMap) {
-        self.resultMap = unsafeResultMap
+        resultMap = unsafeResultMap
       }
 
       public init(id: GraphQLID, firstName: String, lastName: String, email: String) {
@@ -309,7 +309,7 @@ public final class GetBillsQuery: GraphQLQuery {
     public private(set) var resultMap: ResultMap
 
     public init(unsafeResultMap: ResultMap) {
-      self.resultMap = unsafeResultMap
+      resultMap = unsafeResultMap
     }
 
     public init(getBillsPerMonth: GetBillsPerMonth) {
@@ -339,7 +339,7 @@ public final class GetBillsQuery: GraphQLQuery {
       public private(set) var resultMap: ResultMap
 
       public init(unsafeResultMap: ResultMap) {
-        self.resultMap = unsafeResultMap
+        resultMap = unsafeResultMap
       }
 
       public init(pageInfo: PageInfo, edges: [Edge]) {
@@ -386,7 +386,7 @@ public final class GetBillsQuery: GraphQLQuery {
         public private(set) var resultMap: ResultMap
 
         public init(unsafeResultMap: ResultMap) {
-          self.resultMap = unsafeResultMap
+          resultMap = unsafeResultMap
         }
 
         public init(endCursor: String? = nil) {
@@ -426,7 +426,7 @@ public final class GetBillsQuery: GraphQLQuery {
         public private(set) var resultMap: ResultMap
 
         public init(unsafeResultMap: ResultMap) {
-          self.resultMap = unsafeResultMap
+          resultMap = unsafeResultMap
         }
 
         public init(cursor: String, node: Node) {
@@ -477,7 +477,7 @@ public final class GetBillsQuery: GraphQLQuery {
           public private(set) var resultMap: ResultMap
 
           public init(unsafeResultMap: ResultMap) {
-            self.resultMap = unsafeResultMap
+            resultMap = unsafeResultMap
           }
 
           public init(id: GraphQLID, name: String, value: Int, type: BillType, createdAt: String) {
@@ -582,7 +582,7 @@ public final class SaveBillMutation: GraphQLMutation {
     public private(set) var resultMap: ResultMap
 
     public init(unsafeResultMap: ResultMap) {
-      self.resultMap = unsafeResultMap
+      resultMap = unsafeResultMap
     }
 
     public init(saveBill: SaveBill) {
@@ -614,7 +614,7 @@ public final class SaveBillMutation: GraphQLMutation {
       public private(set) var resultMap: ResultMap
 
       public init(unsafeResultMap: ResultMap) {
-        self.resultMap = unsafeResultMap
+        resultMap = unsafeResultMap
       }
 
       public init(id: GraphQLID, name: String, value: Int, type: BillType) {
@@ -687,8 +687,7 @@ public final class ProfileQuery: GraphQLQuery {
 
   public let operationName: String = "Profile"
 
-  public init() {
-  }
+  public init() {}
 
   public struct Data: GraphQLSelectionSet {
     public static let possibleTypes: [String] = ["Query"]
@@ -702,7 +701,7 @@ public final class ProfileQuery: GraphQLQuery {
     public private(set) var resultMap: ResultMap
 
     public init(unsafeResultMap: ResultMap) {
-      self.resultMap = unsafeResultMap
+      resultMap = unsafeResultMap
     }
 
     public init(profile: Profile) {
@@ -735,7 +734,7 @@ public final class ProfileQuery: GraphQLQuery {
       public private(set) var resultMap: ResultMap
 
       public init(unsafeResultMap: ResultMap) {
-        self.resultMap = unsafeResultMap
+        resultMap = unsafeResultMap
       }
 
       public init(id: GraphQLID, fullName: String, firstName: String, lastName: String, email: String) {

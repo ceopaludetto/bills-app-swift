@@ -10,7 +10,7 @@ import SwiftUI
 struct GeneralView: View {
   @StateObject private var generalController = GeneralController()
   @EnvironmentObject private var authenticationController: AuthenticationController
-    
+
   var body: some View {
     Form {
 //      if profileController.user != nil {

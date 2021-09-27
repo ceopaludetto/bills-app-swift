@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
   @StateObject private var profileController = ProfileController()
-  
+
   var body: some View {
     NavigationView {
       List {

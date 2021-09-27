@@ -12,10 +12,10 @@ class DateUtil {
   private let formatter = RelativeDateTimeFormatter()
   private let parser = DateFormatter()
 
-  init () {
+  init() {
     parser.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
   }
-  
+
   func format(value: String) -> String {
     let date = parser.date(from: value)
     return formatter.localizedString(for: date!, relativeTo: Date())
