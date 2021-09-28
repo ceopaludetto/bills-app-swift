@@ -9,25 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
   @StateObject private var authenticationController = AuthenticationController()
+  @StateObject private var featherController = FeatherController()
 
   var body: some View {
     if !authenticationController.isLoggedIn {
-      LoginView().accentColor(.purple).environmentObject(authenticationController)
+      LoginView().accentColor(.purple).environmentObject(authenticationController).environmentObject(featherController)
     } else {
-      TabView {
-        HomeView().tabItem {
-          Image(systemName: "dollarsign.circle")
-          Text("Contas")
-        }
-        ChartView().tabItem {
-          Image(systemName: "chart.pie")
-          Text("Gráficos")
-        }
-        SettingsView().tabItem {
-          Image(systemName: "gear")
-          Text("Ajustes")
-        }
-      }.accentColor(.purple).environmentObject(authenticationController)
+      TabBar().accentColor(.purple).environmentObject(authenticationController).environmentObject(featherController)
     }
   }
 }

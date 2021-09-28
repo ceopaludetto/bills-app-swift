@@ -16,7 +16,7 @@ struct SettingsView: View {
         if profileController.user != nil {
           Section {
             NavigationLink(destination: GeneralView().environmentObject(profileController)) {
-              Image(systemName: "info.circle").clipShape(Circle())
+              Image(systemName: "person.crop.circle.fill").font(.title).foregroundColor(.gray)
               VStack(alignment: .leading) {
                 Text(profileController.user!.fullName).font(.body).padding(.top, 4)
                 Text(profileController.user!.email).font(.footnote).foregroundColor(.gray).padding(.bottom, 4)
@@ -25,9 +25,8 @@ struct SettingsView: View {
           }
         }
         Section {
-          NavigationLink(destination: InfoView()) {
-            Image(systemName: "info.circle.fill").foregroundColor(.blue)
-            Text("Sobre")
+          NavigationLink(destination: AboutView()) {
+            Label(title: { Text("Sobre") }, icon: { FeatherIcon(name: "info").foregroundColor(.blue) })
           }
         }
       }

@@ -20,7 +20,7 @@ struct BillView: View {
       HStack {
         Text("Valor").font(.body)
         Spacer()
-        Text(CurrencyUtil.current.format(value: item!.node.value)).font(.body).foregroundColor(.gray)
+        Text(CurrencyUtil.current.display(value: item!.node.value)).font(.body).foregroundColor(.gray)
       }
       HStack {
         Text("Data").font(.body)
@@ -33,7 +33,7 @@ struct BillView: View {
       ToolbarItemGroup(placement: .navigationBarTrailing) {
         Button(
           action: { print("oi") },
-          label: { Image(systemName: "trash") }
+          label: { FeatherIcon(name: "trash-2") }
         )
       }
     }

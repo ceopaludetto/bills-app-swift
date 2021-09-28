@@ -18,8 +18,14 @@
 		072889BA26FE7F93009B7848 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889B926FE7F93009B7848 /* HomeView.swift */; };
 		072889BC26FE8017009B7848 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889BB26FE8017009B7848 /* SettingsView.swift */; };
 		072889BE26FE827E009B7848 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889BD26FE827E009B7848 /* GeneralView.swift */; };
-		072889C026FE9342009B7848 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889BF26FE9342009B7848 /* InfoView.swift */; };
+		072889C026FE9342009B7848 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889BF26FE9342009B7848 /* AboutView.swift */; };
 		072889C226FEA277009B7848 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889C126FEA277009B7848 /* ChartView.swift */; };
+		0736924E27027C34001BF001 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0736924D27027C34001BF001 /* Feather.ttf */; };
+		0736925227028172001BF001 /* FeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736925127028172001BF001 /* FeatherIcon.swift */; };
+		0736925427028246001BF001 /* Glyphs.json in Resources */ = {isa = PBXBuildFile; fileRef = 0736925327028246001BF001 /* Glyphs.json */; };
+		07369256270283B9001BF001 /* FeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369255270283B9001BF001 /* FeatherController.swift */; };
+		07369258270288D6001BF001 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369257270288D6001BF001 /* TabBar.swift */; };
+		0736925C27029DB3001BF001 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736925B27029DB3001BF001 /* CurrencyField.swift */; };
 		07A176FC26FED43600DDBC2A /* Authentication.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07A176FB26FED43600DDBC2A /* Authentication.graphql */; };
 		07A176FE26FED53B00DDBC2A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A176FD26FED53B00DDBC2A /* API.swift */; };
 		07A1770026FED61500DDBC2A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A176FF26FED61500DDBC2A /* Network.swift */; };
@@ -30,7 +36,6 @@
 		07CDB15A26FFA4D7008A14DF /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15926FFA4D7008A14DF /* AuthenticationController.swift */; };
 		07CDB15C26FFAA4C008A14DF /* User.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07CDB15B26FFAA4C008A14DF /* User.graphql */; };
 		07CDB15E26FFAD23008A14DF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15D26FFAD23008A14DF /* ProfileController.swift */; };
-		07CDB16026FFB178008A14DF /* GeneralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15F26FFB178008A14DF /* GeneralController.swift */; };
 		07CDB16226FFB437008A14DF /* AddBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16126FFB437008A14DF /* AddBillView.swift */; };
 		07CDB16426FFBDDF008A14DF /* Bill.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07CDB16326FFBDDF008A14DF /* Bill.graphql */; };
 		07CDB16626FFBE83008A14DF /* BillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16526FFBE83008A14DF /* BillController.swift */; };
@@ -72,8 +77,15 @@
 		072889B926FE7F93009B7848 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		072889BB26FE8017009B7848 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		072889BD26FE827E009B7848 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
-		072889BF26FE9342009B7848 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		072889BF26FE9342009B7848 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		072889C126FEA277009B7848 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		0736924D27027C34001BF001 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		0736924F27027DDD001BF001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0736925127028172001BF001 /* FeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherIcon.swift; sourceTree = "<group>"; };
+		0736925327028246001BF001 /* Glyphs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Glyphs.json; sourceTree = "<group>"; };
+		07369255270283B9001BF001 /* FeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherController.swift; sourceTree = "<group>"; };
+		07369257270288D6001BF001 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		0736925B27029DB3001BF001 /* CurrencyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
 		07A176FB26FED43600DDBC2A /* Authentication.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Authentication.graphql; sourceTree = "<group>"; };
 		07A176FD26FED53B00DDBC2A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Bills/API.swift; sourceTree = SOURCE_ROOT; };
 		07A176FF26FED61500DDBC2A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -84,7 +96,6 @@
 		07CDB15926FFA4D7008A14DF /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
 		07CDB15B26FFAA4C008A14DF /* User.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = User.graphql; sourceTree = "<group>"; };
 		07CDB15D26FFAD23008A14DF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		07CDB15F26FFB178008A14DF /* GeneralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralController.swift; sourceTree = "<group>"; };
 		07CDB16126FFB437008A14DF /* AddBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillView.swift; sourceTree = "<group>"; };
 		07CDB16326FFBDDF008A14DF /* Bill.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bill.graphql; sourceTree = "<group>"; };
 		07CDB16526FFBE83008A14DF /* BillController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillController.swift; sourceTree = "<group>"; };
@@ -155,6 +166,9 @@
 		0728898C26FE7F27009B7848 /* Bills */ = {
 			isa = PBXGroup;
 			children = (
+				0736925027028158001BF001 /* Components */,
+				0736924F27027DDD001BF001 /* Info.plist */,
+				0736924C27027BF2001BF001 /* Assets */,
 				07CDB16726FFD50C008A14DF /* Utils */,
 				07CDB15226FF7D12008A14DF /* Controllers */,
 				07A176F826FED12200DDBC2A /* Providers */,
@@ -198,13 +212,32 @@
 				072889B926FE7F93009B7848 /* HomeView.swift */,
 				072889BB26FE8017009B7848 /* SettingsView.swift */,
 				072889BD26FE827E009B7848 /* GeneralView.swift */,
-				072889BF26FE9342009B7848 /* InfoView.swift */,
+				072889BF26FE9342009B7848 /* AboutView.swift */,
 				072889C126FEA277009B7848 /* ChartView.swift */,
 				07A1770126FED9F400DDBC2A /* LoginView.swift */,
 				07CDB16126FFB437008A14DF /* AddBillView.swift */,
 				07CDB16C27000E52008A14DF /* BillView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0736924C27027BF2001BF001 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0736924D27027C34001BF001 /* Feather.ttf */,
+				0736925327028246001BF001 /* Glyphs.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0736925027028158001BF001 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0736925127028172001BF001 /* FeatherIcon.swift */,
+				07369257270288D6001BF001 /* TabBar.swift */,
+				0736925B27029DB3001BF001 /* CurrencyField.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		07A176F826FED12200DDBC2A /* Providers */ = {
@@ -235,8 +268,8 @@
 				07CDB15326FF7D2B008A14DF /* LoginController.swift */,
 				07CDB15926FFA4D7008A14DF /* AuthenticationController.swift */,
 				07CDB15D26FFAD23008A14DF /* ProfileController.swift */,
-				07CDB15F26FFB178008A14DF /* GeneralController.swift */,
 				07CDB16526FFBE83008A14DF /* BillController.swift */,
+				07369255270283B9001BF001 /* FeatherController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -386,6 +419,8 @@
 			files = (
 				07CDB15C26FFAA4C008A14DF /* User.graphql in Resources */,
 				0728899526FE7F28009B7848 /* Preview Assets.xcassets in Resources */,
+				0736925427028246001BF001 /* Glyphs.json in Resources */,
+				0736924E27027C34001BF001 /* Feather.ttf in Resources */,
 				07CDB16426FFBDDF008A14DF /* Bill.graphql in Resources */,
 				07A176FC26FED43600DDBC2A /* Authentication.graphql in Resources */,
 				0728899226FE7F28009B7848 /* Assets.xcassets in Resources */,
@@ -559,7 +594,6 @@
 				07CDB15426FF7D2B008A14DF /* LoginController.swift in Sources */,
 				072889BC26FE8017009B7848 /* SettingsView.swift in Sources */,
 				0728899026FE7F27009B7848 /* ContentView.swift in Sources */,
-				07CDB16026FFB178008A14DF /* GeneralController.swift in Sources */,
 				07CDB16D27000E52008A14DF /* BillView.swift in Sources */,
 				07CDB16226FFB437008A14DF /* AddBillView.swift in Sources */,
 				072889C226FEA277009B7848 /* ChartView.swift in Sources */,
@@ -569,13 +603,17 @@
 				07CDB16926FFD51C008A14DF /* Currency.swift in Sources */,
 				07CDB16B26FFFBCB008A14DF /* Date.swift in Sources */,
 				07CDB15A26FFA4D7008A14DF /* AuthenticationController.swift in Sources */,
-				072889C026FE9342009B7848 /* InfoView.swift in Sources */,
+				072889C026FE9342009B7848 /* AboutView.swift in Sources */,
 				07CDB15826FF94B6008A14DF /* TokenManager.swift in Sources */,
 				07A176FE26FED53B00DDBC2A /* API.swift in Sources */,
 				07CDB16626FFBE83008A14DF /* BillController.swift in Sources */,
+				07369256270283B9001BF001 /* FeatherController.swift in Sources */,
+				0736925227028172001BF001 /* FeatherIcon.swift in Sources */,
 				07CDB15626FF8FD6008A14DF /* AuthenticationInterceptor.swift in Sources */,
 				07A1770226FED9F400DDBC2A /* LoginView.swift in Sources */,
+				0736925C27029DB3001BF001 /* CurrencyField.swift in Sources */,
 				0728898E26FE7F27009B7848 /* BillsApp.swift in Sources */,
+				07369258270288D6001BF001 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +778,7 @@
 				DEVELOPMENT_TEAM = 27KZ57XG99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bills/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -771,6 +810,7 @@
 				DEVELOPMENT_TEAM = 27KZ57XG99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bills/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

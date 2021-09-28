@@ -5,6 +5,7 @@
 //  Created by Carlos Eduardo on 24/09/21.
 //
 
+import Apollo
 import SwiftUI
 
 struct HomeView: View {
@@ -22,7 +23,7 @@ struct HomeView: View {
               Text(DateUtil.current.format(value: item.node.createdAt)).font(.footnote).foregroundColor(.gray)
             }
             Spacer()
-            Text(CurrencyUtil.current.format(value: item.node.value)).font(.title2).foregroundColor(item.node.value < 0 ? .red : .green).onAppear {
+            Text(CurrencyUtil.current.display(value: item.node.value)).font(.title2).foregroundColor(item.node.value < 0 ? .red : .green).onAppear {
               if item.cursor == billController.data?.pageInfo.endCursor {
                 let after = billController.data!.pageInfo.endCursor
                 billController.handleFetch(after: after)
@@ -31,23 +32,29 @@ struct HomeView: View {
           }.padding(.vertical, 2)
         }
       }
+      .refreshable {
+        billController.watcher?.refetch(cachePolicy: .fetchIgnoringCacheData)
+      }
       .searchable(text: $search)
       .navigationTitle(Text("Início"))
       .toolbar {
         ToolbarItemGroup(placement: .navigationBarTrailing) {
           Button(
             action: { showSheet = true },
-            label: { Image(systemName: "plus.circle") }
+            label: { FeatherIcon(name: "plus-circle") }
           )
         }
       }
     }
     .sheet(isPresented: $showSheet) {
-      AddBillView()
+      AddBillView().environmentObject(billController)
     }
     .onAppear(perform: {
       billController.handleFetch()
     })
+    .onDisappear {
+      billController.cancelWatcher()
+    }
   }
 }
 
