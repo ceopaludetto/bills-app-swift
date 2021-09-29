@@ -17,9 +17,6 @@ struct TabBar: View {
       HomeView().tabItem {
         FeatherIcon(name: "home")
       }
-      ChartView().tabItem {
-        FeatherIcon(name: "pie-chart")
-      }
       SettingsView().tabItem {
         FeatherIcon(name: "sliders")
       }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FeatherController: ObservableObject {
+class FeatherModel: ObservableObject {
   private var glyphs: [String: Int] = [:]
 
   init() {
@@ -16,11 +16,10 @@ class FeatherController: ObservableObject {
         let data = try Data(contentsOf: URL(fileURLWithPath: filePath), options: .mappedIfSafe)
         let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
         if let jsonResult = jsonResult as? [String: Int] {
-          print(jsonResult)
           glyphs = jsonResult
         }
       } catch {
-        print(error)
+        return
       }
     }
   }

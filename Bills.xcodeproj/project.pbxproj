@@ -15,33 +15,34 @@
 		0728899F26FE7F28009B7848 /* BillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728899E26FE7F28009B7848 /* BillsTests.swift */; };
 		072889A926FE7F28009B7848 /* BillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889A826FE7F28009B7848 /* BillsUITests.swift */; };
 		072889AB26FE7F28009B7848 /* BillsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889AA26FE7F28009B7848 /* BillsUITestsLaunchTests.swift */; };
-		072889BA26FE7F93009B7848 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889B926FE7F93009B7848 /* HomeView.swift */; };
-		072889BC26FE8017009B7848 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889BB26FE8017009B7848 /* SettingsView.swift */; };
-		072889BE26FE827E009B7848 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889BD26FE827E009B7848 /* GeneralView.swift */; };
-		072889C026FE9342009B7848 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889BF26FE9342009B7848 /* AboutView.swift */; };
-		072889C226FEA277009B7848 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072889C126FEA277009B7848 /* ChartView.swift */; };
 		0736924E27027C34001BF001 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0736924D27027C34001BF001 /* Feather.ttf */; };
-		0736925227028172001BF001 /* FeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736925127028172001BF001 /* FeatherIcon.swift */; };
+		0736925227028172001BF001 /* FeatherComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736925127028172001BF001 /* FeatherComponent.swift */; };
 		0736925427028246001BF001 /* Glyphs.json in Resources */ = {isa = PBXBuildFile; fileRef = 0736925327028246001BF001 /* Glyphs.json */; };
-		07369256270283B9001BF001 /* FeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369255270283B9001BF001 /* FeatherController.swift */; };
-		07369258270288D6001BF001 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369257270288D6001BF001 /* TabBar.swift */; };
-		0736925C27029DB3001BF001 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736925B27029DB3001BF001 /* CurrencyField.swift */; };
+		07369256270283B9001BF001 /* FeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369255270283B9001BF001 /* FeatherModel.swift */; };
+		07369258270288D6001BF001 /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369257270288D6001BF001 /* TabBarComponent.swift */; };
+		076AF7432704B7E3009E821E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7422704B7E3009E821E /* LoginView.swift */; };
+		076AF7452704B7F0009E821E /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7442704B7F0009E821E /* LoginDTO.swift */; };
+		076AF7472704B7FB009E821E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7462704B7FB009E821E /* LoginModel.swift */; };
+		076AF7492704B981009E821E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7482704B981009E821E /* API.swift */; };
+		076AF74B2704C15A009E821E /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF74A2704C15A009E821E /* Validators.swift */; };
+		076AF74F2704E23B009E821E /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF74E2704E23B009E821E /* AuthModel.swift */; };
+		076AF7522704E2E0009E821E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7512704E2E0009E821E /* HomeView.swift */; };
+		076AF7552704E339009E821E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7542704E339009E821E /* SettingsView.swift */; };
+		076AF7582704E41C009E821E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7572704E41C009E821E /* AboutView.swift */; };
+		076AF75A2704E67B009E821E /* UserCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7592704E67B009E821E /* UserCardComponent.swift */; };
+		076AF75E2704E6AE009E821E /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF75D2704E6AE009E821E /* UserView.swift */; };
+		076AF7602704E7F6009E821E /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF75F2704E7F6009E821E /* SettingsModel.swift */; };
+		076AF767270513D4009E821E /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF766270513D4009E821E /* HomeModel.swift */; };
+		076AF76A27051631009E821E /* BillCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF76927051631009E821E /* BillCardComponent.swift */; };
+		076AF76D2705278B009E821E /* BillInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF76C2705278B009E821E /* BillInfoView.swift */; };
 		07A176FC26FED43600DDBC2A /* Authentication.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07A176FB26FED43600DDBC2A /* Authentication.graphql */; };
-		07A176FE26FED53B00DDBC2A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A176FD26FED53B00DDBC2A /* API.swift */; };
-		07A1770026FED61500DDBC2A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A176FF26FED61500DDBC2A /* Network.swift */; };
-		07A1770226FED9F400DDBC2A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1770126FED9F400DDBC2A /* LoginView.swift */; };
-		07CDB15426FF7D2B008A14DF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15326FF7D2B008A14DF /* LoginController.swift */; };
-		07CDB15626FF8FD6008A14DF /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15526FF8FD6008A14DF /* AuthenticationInterceptor.swift */; };
-		07CDB15826FF94B6008A14DF /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15726FF94B6008A14DF /* TokenManager.swift */; };
-		07CDB15A26FFA4D7008A14DF /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15926FFA4D7008A14DF /* AuthenticationController.swift */; };
+		07A1770026FED61500DDBC2A /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A176FF26FED61500DDBC2A /* ApolloClient.swift */; };
+		07CDB15626FF8FD6008A14DF /* ApolloAuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15526FF8FD6008A14DF /* ApolloAuthInterceptor.swift */; };
+		07CDB15826FF94B6008A14DF /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15726FF94B6008A14DF /* KeychainManager.swift */; };
 		07CDB15C26FFAA4C008A14DF /* User.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07CDB15B26FFAA4C008A14DF /* User.graphql */; };
-		07CDB15E26FFAD23008A14DF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15D26FFAD23008A14DF /* ProfileController.swift */; };
-		07CDB16226FFB437008A14DF /* AddBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16126FFB437008A14DF /* AddBillView.swift */; };
 		07CDB16426FFBDDF008A14DF /* Bill.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07CDB16326FFBDDF008A14DF /* Bill.graphql */; };
-		07CDB16626FFBE83008A14DF /* BillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16526FFBE83008A14DF /* BillController.swift */; };
 		07CDB16926FFD51C008A14DF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16826FFD51C008A14DF /* Currency.swift */; };
 		07CDB16B26FFFBCB008A14DF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16A26FFFBCB008A14DF /* Date.swift */; };
-		07CDB16D27000E52008A14DF /* BillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16C27000E52008A14DF /* BillView.swift */; };
 		6E4E28BCA2BD0F148FD5A6F2 /* Pods_BillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768D23D64C7E2C3C32DB73AB /* Pods_BillsTests.framework */; };
 		99E35A91F6556741A3B61935 /* Pods_Bills_BillsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4D190DB7B53A362465FC8 /* Pods_Bills_BillsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,34 +75,35 @@
 		072889A426FE7F28009B7848 /* BillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		072889A826FE7F28009B7848 /* BillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsUITests.swift; sourceTree = "<group>"; };
 		072889AA26FE7F28009B7848 /* BillsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		072889B926FE7F93009B7848 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		072889BB26FE8017009B7848 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		072889BD26FE827E009B7848 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
-		072889BF26FE9342009B7848 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		072889C126FEA277009B7848 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		0736924D27027C34001BF001 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
 		0736924F27027DDD001BF001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0736925127028172001BF001 /* FeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherIcon.swift; sourceTree = "<group>"; };
+		0736925127028172001BF001 /* FeatherComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherComponent.swift; sourceTree = "<group>"; };
 		0736925327028246001BF001 /* Glyphs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Glyphs.json; sourceTree = "<group>"; };
-		07369255270283B9001BF001 /* FeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherController.swift; sourceTree = "<group>"; };
-		07369257270288D6001BF001 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		0736925B27029DB3001BF001 /* CurrencyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
+		07369255270283B9001BF001 /* FeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherModel.swift; sourceTree = "<group>"; };
+		07369257270288D6001BF001 /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
+		076AF7422704B7E3009E821E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		076AF7442704B7F0009E821E /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		076AF7462704B7FB009E821E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		076AF7482704B981009E821E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Bills/API.swift; sourceTree = SOURCE_ROOT; };
+		076AF74A2704C15A009E821E /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		076AF74E2704E23B009E821E /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		076AF7512704E2E0009E821E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		076AF7542704E339009E821E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		076AF7572704E41C009E821E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		076AF7592704E67B009E821E /* UserCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardComponent.swift; sourceTree = "<group>"; };
+		076AF75D2704E6AE009E821E /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		076AF75F2704E7F6009E821E /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		076AF766270513D4009E821E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		076AF76927051631009E821E /* BillCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCardComponent.swift; sourceTree = "<group>"; };
+		076AF76C2705278B009E821E /* BillInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInfoView.swift; sourceTree = "<group>"; };
 		07A176FB26FED43600DDBC2A /* Authentication.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Authentication.graphql; sourceTree = "<group>"; };
-		07A176FD26FED53B00DDBC2A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Bills/API.swift; sourceTree = SOURCE_ROOT; };
-		07A176FF26FED61500DDBC2A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		07A1770126FED9F400DDBC2A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		07CDB15326FF7D2B008A14DF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		07CDB15526FF8FD6008A14DF /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		07CDB15726FF94B6008A14DF /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
-		07CDB15926FFA4D7008A14DF /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		07A176FF26FED61500DDBC2A /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
+		07CDB15526FF8FD6008A14DF /* ApolloAuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloAuthInterceptor.swift; sourceTree = "<group>"; };
+		07CDB15726FF94B6008A14DF /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		07CDB15B26FFAA4C008A14DF /* User.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = User.graphql; sourceTree = "<group>"; };
-		07CDB15D26FFAD23008A14DF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		07CDB16126FFB437008A14DF /* AddBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillView.swift; sourceTree = "<group>"; };
 		07CDB16326FFBDDF008A14DF /* Bill.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bill.graphql; sourceTree = "<group>"; };
-		07CDB16526FFBE83008A14DF /* BillController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillController.swift; sourceTree = "<group>"; };
 		07CDB16826FFD51C008A14DF /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		07CDB16A26FFFBCB008A14DF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		07CDB16C27000E52008A14DF /* BillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillView.swift; sourceTree = "<group>"; };
 		09706D9AACABC75B7FDEC1BD /* Pods-Bills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bills.debug.xcconfig"; path = "Target Support Files/Pods-Bills/Pods-Bills.debug.xcconfig"; sourceTree = "<group>"; };
 		1B17B24B7DD0EABD2152F00A /* Pods_Bills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAFC8B2B4332D115F51D4E8 /* Pods-Bills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bills.release.xcconfig"; path = "Target Support Files/Pods-Bills/Pods-Bills.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,9 +172,8 @@
 				0736924F27027DDD001BF001 /* Info.plist */,
 				0736924C27027BF2001BF001 /* Assets */,
 				07CDB16726FFD50C008A14DF /* Utils */,
-				07CDB15226FF7D12008A14DF /* Controllers */,
-				07A176F826FED12200DDBC2A /* Providers */,
-				072889B826FE7F7E009B7848 /* Views */,
+				07A176F826FED12200DDBC2A /* Services */,
+				072889B826FE7F7E009B7848 /* Pages */,
 				0728898D26FE7F27009B7848 /* BillsApp.swift */,
 				0728898F26FE7F27009B7848 /* ContentView.swift */,
 				0728899126FE7F28009B7848 /* Assets.xcassets */,
@@ -206,19 +207,17 @@
 			path = BillsUITests;
 			sourceTree = "<group>";
 		};
-		072889B826FE7F7E009B7848 /* Views */ = {
+		072889B826FE7F7E009B7848 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				072889B926FE7F93009B7848 /* HomeView.swift */,
-				072889BB26FE8017009B7848 /* SettingsView.swift */,
-				072889BD26FE827E009B7848 /* GeneralView.swift */,
-				072889BF26FE9342009B7848 /* AboutView.swift */,
-				072889C126FEA277009B7848 /* ChartView.swift */,
-				07A1770126FED9F400DDBC2A /* LoginView.swift */,
-				07CDB16126FFB437008A14DF /* AddBillView.swift */,
-				07CDB16C27000E52008A14DF /* BillView.swift */,
+				076AF76B2705277F009E821E /* BillInfo */,
+				076AF75C2704E6A4009E821E /* User */,
+				076AF7562704E411009E821E /* About */,
+				076AF7532704E330009E821E /* Settings */,
+				076AF7502704E2D3009E821E /* Home */,
+				076AF7412704B7DA009E821E /* Login */,
 			);
-			path = Views;
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		0736924C27027BF2001BF001 /* Assets */ = {
@@ -233,23 +232,118 @@
 		0736925027028158001BF001 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0736925127028172001BF001 /* FeatherIcon.swift */,
-				07369257270288D6001BF001 /* TabBar.swift */,
-				0736925B27029DB3001BF001 /* CurrencyField.swift */,
+				076AF76827051623009E821E /* BillCard */,
+				076AF75B2704E67F009E821E /* UserCard */,
+				076AF73E2704B74D009E821E /* TabBar */,
+				076AF73D2704B5ED009E821E /* Feather */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		07A176F826FED12200DDBC2A /* Providers */ = {
+		076AF73D2704B5ED009E821E /* Feather */ = {
 			isa = PBXGroup;
 			children = (
-				07CDB15726FF94B6008A14DF /* TokenManager.swift */,
-				07CDB15526FF8FD6008A14DF /* AuthenticationInterceptor.swift */,
-				07A176FF26FED61500DDBC2A /* Network.swift */,
-				07A176FD26FED53B00DDBC2A /* API.swift */,
-				07A176FA26FED40700DDBC2A /* Graphql */,
+				07369255270283B9001BF001 /* FeatherModel.swift */,
+				0736925127028172001BF001 /* FeatherComponent.swift */,
 			);
-			path = Providers;
+			path = Feather;
+			sourceTree = "<group>";
+		};
+		076AF73E2704B74D009E821E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				07369257270288D6001BF001 /* TabBarComponent.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		076AF7412704B7DA009E821E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				076AF7422704B7E3009E821E /* LoginView.swift */,
+				076AF7442704B7F0009E821E /* LoginDTO.swift */,
+				076AF7462704B7FB009E821E /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		076AF74C2704E223009E821E /* Global Models */ = {
+			isa = PBXGroup;
+			children = (
+				076AF74E2704E23B009E821E /* AuthModel.swift */,
+			);
+			path = "Global Models";
+			sourceTree = "<group>";
+		};
+		076AF7502704E2D3009E821E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				076AF7512704E2E0009E821E /* HomeView.swift */,
+				076AF766270513D4009E821E /* HomeModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		076AF7532704E330009E821E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				076AF7542704E339009E821E /* SettingsView.swift */,
+				076AF75F2704E7F6009E821E /* SettingsModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		076AF7562704E411009E821E /* About */ = {
+			isa = PBXGroup;
+			children = (
+				076AF7572704E41C009E821E /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		076AF75B2704E67F009E821E /* UserCard */ = {
+			isa = PBXGroup;
+			children = (
+				076AF7592704E67B009E821E /* UserCardComponent.swift */,
+			);
+			path = UserCard;
+			sourceTree = "<group>";
+		};
+		076AF75C2704E6A4009E821E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				076AF75D2704E6AE009E821E /* UserView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		076AF76827051623009E821E /* BillCard */ = {
+			isa = PBXGroup;
+			children = (
+				076AF76927051631009E821E /* BillCardComponent.swift */,
+			);
+			path = BillCard;
+			sourceTree = "<group>";
+		};
+		076AF76B2705277F009E821E /* BillInfo */ = {
+			isa = PBXGroup;
+			children = (
+				076AF76C2705278B009E821E /* BillInfoView.swift */,
+			);
+			path = BillInfo;
+			sourceTree = "<group>";
+		};
+		07A176F826FED12200DDBC2A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				076AF7482704B981009E821E /* API.swift */,
+				07CDB15726FF94B6008A14DF /* KeychainManager.swift */,
+				07CDB15526FF8FD6008A14DF /* ApolloAuthInterceptor.swift */,
+				07A176FF26FED61500DDBC2A /* ApolloClient.swift */,
+				07A176FA26FED40700DDBC2A /* Graphql */,
+				076AF74C2704E223009E821E /* Global Models */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		07A176FA26FED40700DDBC2A /* Graphql */ = {
@@ -262,23 +356,12 @@
 			path = Graphql;
 			sourceTree = "<group>";
 		};
-		07CDB15226FF7D12008A14DF /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				07CDB15326FF7D2B008A14DF /* LoginController.swift */,
-				07CDB15926FFA4D7008A14DF /* AuthenticationController.swift */,
-				07CDB15D26FFAD23008A14DF /* ProfileController.swift */,
-				07CDB16526FFBE83008A14DF /* BillController.swift */,
-				07369255270283B9001BF001 /* FeatherController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		07CDB16726FFD50C008A14DF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				07CDB16826FFD51C008A14DF /* Currency.swift */,
 				07CDB16A26FFFBCB008A14DF /* Date.swift */,
+				076AF74A2704C15A009E821E /* Validators.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -590,30 +673,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072889BA26FE7F93009B7848 /* HomeView.swift in Sources */,
-				07CDB15426FF7D2B008A14DF /* LoginController.swift in Sources */,
-				072889BC26FE8017009B7848 /* SettingsView.swift in Sources */,
 				0728899026FE7F27009B7848 /* ContentView.swift in Sources */,
-				07CDB16D27000E52008A14DF /* BillView.swift in Sources */,
-				07CDB16226FFB437008A14DF /* AddBillView.swift in Sources */,
-				072889C226FEA277009B7848 /* ChartView.swift in Sources */,
-				07CDB15E26FFAD23008A14DF /* ProfileController.swift in Sources */,
-				072889BE26FE827E009B7848 /* GeneralView.swift in Sources */,
-				07A1770026FED61500DDBC2A /* Network.swift in Sources */,
+				076AF76D2705278B009E821E /* BillInfoView.swift in Sources */,
+				076AF7452704B7F0009E821E /* LoginDTO.swift in Sources */,
+				076AF7602704E7F6009E821E /* SettingsModel.swift in Sources */,
+				07A1770026FED61500DDBC2A /* ApolloClient.swift in Sources */,
+				076AF7552704E339009E821E /* SettingsView.swift in Sources */,
 				07CDB16926FFD51C008A14DF /* Currency.swift in Sources */,
 				07CDB16B26FFFBCB008A14DF /* Date.swift in Sources */,
-				07CDB15A26FFA4D7008A14DF /* AuthenticationController.swift in Sources */,
-				072889C026FE9342009B7848 /* AboutView.swift in Sources */,
-				07CDB15826FF94B6008A14DF /* TokenManager.swift in Sources */,
-				07A176FE26FED53B00DDBC2A /* API.swift in Sources */,
-				07CDB16626FFBE83008A14DF /* BillController.swift in Sources */,
-				07369256270283B9001BF001 /* FeatherController.swift in Sources */,
-				0736925227028172001BF001 /* FeatherIcon.swift in Sources */,
-				07CDB15626FF8FD6008A14DF /* AuthenticationInterceptor.swift in Sources */,
-				07A1770226FED9F400DDBC2A /* LoginView.swift in Sources */,
-				0736925C27029DB3001BF001 /* CurrencyField.swift in Sources */,
+				076AF7522704E2E0009E821E /* HomeView.swift in Sources */,
+				076AF74B2704C15A009E821E /* Validators.swift in Sources */,
+				07CDB15826FF94B6008A14DF /* KeychainManager.swift in Sources */,
+				076AF7492704B981009E821E /* API.swift in Sources */,
+				07369256270283B9001BF001 /* FeatherModel.swift in Sources */,
+				0736925227028172001BF001 /* FeatherComponent.swift in Sources */,
+				076AF7472704B7FB009E821E /* LoginModel.swift in Sources */,
+				076AF76A27051631009E821E /* BillCardComponent.swift in Sources */,
+				076AF75E2704E6AE009E821E /* UserView.swift in Sources */,
+				07CDB15626FF8FD6008A14DF /* ApolloAuthInterceptor.swift in Sources */,
+				076AF7432704B7E3009E821E /* LoginView.swift in Sources */,
+				076AF74F2704E23B009E821E /* AuthModel.swift in Sources */,
+				076AF7582704E41C009E821E /* AboutView.swift in Sources */,
 				0728898E26FE7F27009B7848 /* BillsApp.swift in Sources */,
-				07369258270288D6001BF001 /* TabBar.swift in Sources */,
+				076AF75A2704E67B009E821E /* UserCardComponent.swift in Sources */,
+				07369258270288D6001BF001 /* TabBarComponent.swift in Sources */,
+				076AF767270513D4009E821E /* HomeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

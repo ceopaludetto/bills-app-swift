@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct FeatherIcon: View {
-  @EnvironmentObject var featherController: FeatherController
+  @EnvironmentObject var featherModel: FeatherModel
 
-  var size = CGFloat(22)
   var name: String
+  var size = CGFloat(22)
 
   var body: some View {
-    Text(featherController.fromName(name: name)).font(.custom("Feather", size: size))
+    Text(featherModel.fromName(name: name)).font(.custom("Feather", size: size))
   }
 }
 

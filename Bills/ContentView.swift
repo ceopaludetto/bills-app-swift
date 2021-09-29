@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject private var authenticationController = AuthenticationController()
-  @StateObject private var featherController = FeatherController()
+  @StateObject private var featherModel = FeatherModel()
+  @StateObject private var authModel = AuthenticationModel()
 
   var body: some View {
-    if !authenticationController.isLoggedIn {
-      LoginView().accentColor(.purple).environmentObject(authenticationController).environmentObject(featherController)
-    } else {
-      TabBar().accentColor(.purple).environmentObject(authenticationController).environmentObject(featherController)
-    }
+    Group {
+      if !authModel.logged {
+        LoginView()
+      } else {
+        TabBar()
+      }
+    }.accentColor(.purple).environmentObject(featherModel).environmentObject(authModel)
   }
 }
 

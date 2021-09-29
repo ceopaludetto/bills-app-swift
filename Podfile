@@ -9,6 +9,7 @@ target 'Bills' do
   pod "Apollo"
   pod "KeychainSwift"
   pod "SwiftFormat/CLI"
+  pod 'Wormholy', :configurations => ['Debug']
 
   target 'BillsTests' do
     inherit! :search_paths
