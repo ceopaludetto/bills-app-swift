@@ -12,7 +12,7 @@ struct BillInfoView: View {
 
   var body: some View {
     List {
-      Text(CurrencyUtil.current.display(value: item.value))
+      Text(CurrencyFormatterUtil.display(value: item.value))
     }
     .toolbar {
       ToolbarItem {

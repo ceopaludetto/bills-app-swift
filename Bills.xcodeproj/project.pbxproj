@@ -20,6 +20,8 @@
 		0736925427028246001BF001 /* Glyphs.json in Resources */ = {isa = PBXBuildFile; fileRef = 0736925327028246001BF001 /* Glyphs.json */; };
 		07369256270283B9001BF001 /* FeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369255270283B9001BF001 /* FeatherModel.swift */; };
 		07369258270288D6001BF001 /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07369257270288D6001BF001 /* TabBarComponent.swift */; };
+		07535A9927063D98006B2930 /* BillAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07535A9827063D98006B2930 /* BillAddView.swift */; };
+		07535A9B27064635006B2930 /* BillAddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07535A9A27064635006B2930 /* BillAddModel.swift */; };
 		076AF7432704B7E3009E821E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7422704B7E3009E821E /* LoginView.swift */; };
 		076AF7452704B7F0009E821E /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7442704B7F0009E821E /* LoginDTO.swift */; };
 		076AF7472704B7FB009E821E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF7462704B7FB009E821E /* LoginModel.swift */; };
@@ -41,8 +43,8 @@
 		07CDB15826FF94B6008A14DF /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB15726FF94B6008A14DF /* KeychainManager.swift */; };
 		07CDB15C26FFAA4C008A14DF /* User.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07CDB15B26FFAA4C008A14DF /* User.graphql */; };
 		07CDB16426FFBDDF008A14DF /* Bill.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07CDB16326FFBDDF008A14DF /* Bill.graphql */; };
-		07CDB16926FFD51C008A14DF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16826FFD51C008A14DF /* Currency.swift */; };
-		07CDB16B26FFFBCB008A14DF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16A26FFFBCB008A14DF /* Date.swift */; };
+		07CDB16926FFD51C008A14DF /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16826FFD51C008A14DF /* CurrencyFormatter.swift */; };
+		07CDB16B26FFFBCB008A14DF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB16A26FFFBCB008A14DF /* DateFormatter.swift */; };
 		6E4E28BCA2BD0F148FD5A6F2 /* Pods_BillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768D23D64C7E2C3C32DB73AB /* Pods_BillsTests.framework */; };
 		99E35A91F6556741A3B61935 /* Pods_Bills_BillsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4D190DB7B53A362465FC8 /* Pods_Bills_BillsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 		0736925327028246001BF001 /* Glyphs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Glyphs.json; sourceTree = "<group>"; };
 		07369255270283B9001BF001 /* FeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherModel.swift; sourceTree = "<group>"; };
 		07369257270288D6001BF001 /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
+		07535A9827063D98006B2930 /* BillAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAddView.swift; sourceTree = "<group>"; };
+		07535A9A27064635006B2930 /* BillAddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAddModel.swift; sourceTree = "<group>"; };
 		076AF7422704B7E3009E821E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		076AF7442704B7F0009E821E /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
 		076AF7462704B7FB009E821E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -102,8 +106,8 @@
 		07CDB15726FF94B6008A14DF /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		07CDB15B26FFAA4C008A14DF /* User.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = User.graphql; sourceTree = "<group>"; };
 		07CDB16326FFBDDF008A14DF /* Bill.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bill.graphql; sourceTree = "<group>"; };
-		07CDB16826FFD51C008A14DF /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
-		07CDB16A26FFFBCB008A14DF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		07CDB16826FFD51C008A14DF /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		07CDB16A26FFFBCB008A14DF /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		09706D9AACABC75B7FDEC1BD /* Pods-Bills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bills.debug.xcconfig"; path = "Target Support Files/Pods-Bills/Pods-Bills.debug.xcconfig"; sourceTree = "<group>"; };
 		1B17B24B7DD0EABD2152F00A /* Pods_Bills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAFC8B2B4332D115F51D4E8 /* Pods-Bills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bills.release.xcconfig"; path = "Target Support Files/Pods-Bills/Pods-Bills.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 		072889B826FE7F7E009B7848 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				07535A9727063D86006B2930 /* BillAdd */,
 				076AF76B2705277F009E821E /* BillInfo */,
 				076AF75C2704E6A4009E821E /* User */,
 				076AF7562704E411009E821E /* About */,
@@ -238,6 +243,15 @@
 				076AF73D2704B5ED009E821E /* Feather */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		07535A9727063D86006B2930 /* BillAdd */ = {
+			isa = PBXGroup;
+			children = (
+				07535A9827063D98006B2930 /* BillAddView.swift */,
+				07535A9A27064635006B2930 /* BillAddModel.swift */,
+			);
+			path = BillAdd;
 			sourceTree = "<group>";
 		};
 		076AF73D2704B5ED009E821E /* Feather */ = {
@@ -359,8 +373,8 @@
 		07CDB16726FFD50C008A14DF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				07CDB16826FFD51C008A14DF /* Currency.swift */,
-				07CDB16A26FFFBCB008A14DF /* Date.swift */,
+				07CDB16826FFD51C008A14DF /* CurrencyFormatter.swift */,
+				07CDB16A26FFFBCB008A14DF /* DateFormatter.swift */,
 				076AF74A2704C15A009E821E /* Validators.swift */,
 			);
 			path = Utils;
@@ -678,9 +692,10 @@
 				076AF7452704B7F0009E821E /* LoginDTO.swift in Sources */,
 				076AF7602704E7F6009E821E /* SettingsModel.swift in Sources */,
 				07A1770026FED61500DDBC2A /* ApolloClient.swift in Sources */,
+				07535A9B27064635006B2930 /* BillAddModel.swift in Sources */,
 				076AF7552704E339009E821E /* SettingsView.swift in Sources */,
-				07CDB16926FFD51C008A14DF /* Currency.swift in Sources */,
-				07CDB16B26FFFBCB008A14DF /* Date.swift in Sources */,
+				07CDB16926FFD51C008A14DF /* CurrencyFormatter.swift in Sources */,
+				07CDB16B26FFFBCB008A14DF /* DateFormatter.swift in Sources */,
 				076AF7522704E2E0009E821E /* HomeView.swift in Sources */,
 				076AF74B2704C15A009E821E /* Validators.swift in Sources */,
 				07CDB15826FF94B6008A14DF /* KeychainManager.swift in Sources */,
@@ -695,6 +710,7 @@
 				076AF74F2704E23B009E821E /* AuthModel.swift in Sources */,
 				076AF7582704E41C009E821E /* AboutView.swift in Sources */,
 				0728898E26FE7F27009B7848 /* BillsApp.swift in Sources */,
+				07535A9927063D98006B2930 /* BillAddView.swift in Sources */,
 				076AF75A2704E67B009E821E /* UserCardComponent.swift in Sources */,
 				07369258270288D6001BF001 /* TabBarComponent.swift in Sources */,
 				076AF767270513D4009E821E /* HomeModel.swift in Sources */,

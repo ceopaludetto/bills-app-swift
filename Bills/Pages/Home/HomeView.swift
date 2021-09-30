@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
   @State private var search = ""
+  @State private var isPresented = false
   @StateObject private var homeVM = HomeModel()
 
   var body: some View {
@@ -20,7 +21,7 @@ struct HomeView: View {
         ToolbarItem {
           Button(
             action: {
-              print("novo")
+              isPresented = true
             },
             label: {
               FeatherIcon(name: "plus-circle")
@@ -29,9 +30,14 @@ struct HomeView: View {
         }
       }
       .navigationTitle("Gastos")
-    }.onAppear {
+    }
+    .onAppear {
       homeVM.handleFetch(after: nil)
-    }.searchable(text: $search)
+    }
+    .searchable(text: $search, prompt: "Pesquisar")
+    .sheet(isPresented: $isPresented) {
+      BillAddView()
+    }
   }
 }
 

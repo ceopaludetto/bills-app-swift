@@ -13,10 +13,10 @@ struct UserCard: View {
   var body: some View {
     NavigationLink(destination: UserView()) {
       HStack(alignment: .center) {
-        Image(systemName: "person.crop.circle.fill").foregroundColor(.gray).font(.largeTitle)
+        Image(systemName: "person.crop.circle.fill").foregroundColor(.secondary).font(.largeTitle)
         VStack(alignment: .leading) {
           Text(settingsVM.data?.fullName ?? "").font(.title2)
-          Text(settingsVM.data?.email ?? "").foregroundColor(.gray).font(.callout)
+          Text(settingsVM.data?.email ?? "").foregroundColor(.secondary).font(.subheadline)
         }
       }
     }

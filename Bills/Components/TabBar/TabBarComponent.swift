@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct TabBar: View {
-  init() {
-    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Feather", size: 22)!], for: .normal)
-  }
-
   var body: some View {
     TabView {
       HomeView().tabItem {
-        FeatherIcon(name: "home")
+        Image(systemName: "dollarsign.circle")
+        Text("Gastos")
       }
       SettingsView().tabItem {
-        FeatherIcon(name: "sliders")
+        Image(systemName: "slider.vertical.3")
+        Text("Ajustes")
       }
     }
   }

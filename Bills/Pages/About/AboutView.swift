@@ -13,11 +13,7 @@ struct AboutView: View {
   var body: some View {
     List {
       Section {
-        HStack {
-          Text("Versão")
-          Spacer()
-          Text(version!).foregroundColor(.gray).font(.callout)
-        }
+        Text("Versão").badge(version!)
       }
       Section {
         Link(

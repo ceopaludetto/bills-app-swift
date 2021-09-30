@@ -21,6 +21,7 @@ struct LoginView: View {
       }
     } else {
       loginVM.handleLogin(input: loginDTO.input)
+      focused = nil
     }
   }
 
